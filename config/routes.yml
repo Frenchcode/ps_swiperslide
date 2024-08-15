@@ -1,0 +1,9 @@
+swiper_configuration_form_simple:
+  path: /swiperslider/configuration
+  methods: [GET, POST]
+  defaults:
+    _controller: 'PrestaShop\Module\SwiperSlider\Controller\SwiperConfigurationController::index'
+    _legacy_controller: AdminSwiperSlider
+    _legacy_link: AdminSwiperSlider
+
+

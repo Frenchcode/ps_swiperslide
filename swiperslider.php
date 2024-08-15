@@ -28,11 +28,12 @@ class SwiperSlider extends Module
     {
         $this->name = 'swiperslider';
         $this->tab = 'front_office_features';
-        $this->version = '1.0.1';
+        $this->version = '1.0.3';
         $this->author = 'Ephraim Bokuma';
+        $this->author_uri = 'https://www.ephraimbokuma.com';
         $this->need_instance = 0;
-        $this->ps_versions_compliancy = ['min' => '8.1.6', 'max' => _PS_VERSION_];
-        $this->bootstrap = false;
+        $this->ps_versions_compliancy = ['min' => '8.1.0', 'max' => _PS_VERSION_];
+        $this->bootstrap = true;
 
         parent::__construct();
 
@@ -45,16 +46,33 @@ class SwiperSlider extends Module
         }
     }
 
+    //Install method
     public function install(): bool
     {
-        return parent::install() &&
-            Configuration::updateValue('SWIPERSLIDER', 'swiper slider') &&
-            $this->registerHook('displayHeader');
+        return parent::install()
+            && Configuration::updateValue('SWIPERSLIDER', 'swiper slider')
+            && $this->dbInstall();
     }
 
+    //Uninstall method
     public function uninstall(): bool
     {
         return parent::uninstall() &&
             Configuration::deleteByName('SWIPERSLIDER');
+    }
+
+    // SQL: This method gives the blueprint of the data structure needed for the module
+    public function dbInstall(): bool
+    {
+        return true;
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function getContent(): void
+    {
+        $route = $this->get('router')->generate('swiper_configuration_form_simple');
+        Tools::redirectAdmin($route);
     }
 }
