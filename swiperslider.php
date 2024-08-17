@@ -50,8 +50,10 @@ class SwiperSlider extends Module
     public function install(): bool
     {
         return parent::install()
-            && Configuration::updateValue('SWIPERSLIDER', 'swiper slider')
-            && $this->dbInstall();
+            && $this->registerHook('displayWrapperTop')
+            && $this->registerHook('actionFrontControllerSetMedia')
+            && $this->dbInstall()
+            && Configuration::updateValue('SWIPERSLIDER', 'swiper slider');
     }
 
     //Uninstall method
@@ -74,5 +76,55 @@ class SwiperSlider extends Module
     {
         $route = $this->get('router')->generate('swiper_configuration_form_simple');
         Tools::redirectAdmin($route);
+    }
+
+    // Setting the template file
+    public function hookDisplayWrapperTop($params): bool|string
+    {
+        $this->context->smarty->assign([
+            'swiper_slider' => Configuration::get('SWIPERSLIDER'),
+            'swiper_slider_link' => $this->context->link->getModuleLink('swiperslider', 'display'),
+            'swiper_msg' => $this->l("Coming from the controller"),
+        ]);
+
+        return $this->display(__FILE__, 'swiperslider.tpl');
+    }
+
+    public function hookActionFrontControllerSetMedia():void
+    {
+        $this->context->controller->registerStylesheet(
+            'swiperslider-style',
+            'modules/' . $this->name . '/views/css/swiperslider.css',
+            [
+                'media' => 'all',
+                'priority' => 150,
+            ]
+        );
+
+        $this->context->controller->registerStylesheet(
+            'swiper-css',
+            'modules/' . $this->name . '/views/css/swiper-bundle.min.css',
+            [
+                'media' => 'all',
+                'priority' => 100,
+            ]
+        );
+
+        $this->context->controller->registerJavascript(
+            'swiperslider-javascript',
+            'modules/' . $this->name . '/views/js/swiperslider.js',
+            [
+                'position' => 'bottom',
+                'priority' => 150,
+            ]
+        );
+        $this->context->controller->registerJavascript(
+            'swiper-javascript',
+            'modules/' . $this->name . '/views/js/swiper-bundle.min.js',
+            [
+                'position' => 'bottom',
+                'priority' => 100,
+            ]
+        );
     }
 }

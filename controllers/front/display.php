@@ -1,9 +1,12 @@
 <?php
-class mymoduledisplayModuleFrontController extends ModuleFrontController
+class swipersliderdisplayModuleFrontController extends ModuleFrontController
 {
-    public function initContent()
+    /**
+     * @throws PrestaShopException
+     */
+    public function initContent(): void
     {
         parent::initContent();
-        $this->setTemplate('module:mymodule/views/templates/front/display.tpl');
+        $this->setTemplate('module:swiperslider/views/templates/front/display.tpl');
     }
 }
