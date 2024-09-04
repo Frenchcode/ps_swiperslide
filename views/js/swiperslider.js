@@ -23,7 +23,7 @@ const swiperOptions = {
     loop: "infinite",
     effect: "fade",
     autoplay: {
-        delay: 50000,
+        delay: 5000,
         disableOnInteraction: true
     },
     navigation: {
