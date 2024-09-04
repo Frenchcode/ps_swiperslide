@@ -28,7 +28,7 @@ class SwiperSlider extends Module
     {
         $this->name = 'swiperslider';
         $this->tab = 'front_office_features';
-        $this->version = '1.0.3';
+        $this->version = '1.0.4';
         $this->author = 'Ephraim Bokuma';
         $this->author_uri = 'https://www.ephraimbokuma.com';
         $this->need_instance = 0;
@@ -78,17 +78,29 @@ class SwiperSlider extends Module
         Tools::redirectAdmin($route);
     }
 
+    public function getOverrides()
+    {
+
+    }
+
     // Setting the template file
     public function hookDisplayWrapperTop($params): bool|string
     {
         $this->context->smarty->assign([
             'swiper_slider' => Configuration::get('SWIPERSLIDER'),
             'swiper_slider_link' => $this->context->link->getModuleLink('swiperslider', 'display'),
-            'swiper_msg' => $this->l("Coming from the controller"),
+            'swiper_msg' => $this->l('Coming from the controller'),
+            'creme_alt' => $this->l('Slim Xtrem'),
+            'creme_title' => $this->l('Slim'),
+            'creme_title_two' => $this->l('Xreme ’'),
         ]);
 
-        return $this->display(__FILE__, 'swiperslider.tpl');
+        if ($this->context->controller->php_self == 'index')
+            return $this->display(__FILE__, 'swiperslider.tpl');
+        return false;
     }
+
+
 
     public function hookActionFrontControllerSetMedia():void
     {

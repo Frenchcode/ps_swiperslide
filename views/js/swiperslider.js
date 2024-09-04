@@ -1,18 +1,30 @@
-document.addEventListener('DOMContentLoaded', function () {
-    console.log("Dom ready");
-});
 
-const slide = document.querySelectorAll(".swiper-slide");
-for (const i of slide) {
-    const random = (number) => Math.floor(Math.random() * (number + 1));
-    i.style.backgroundColor = `rgb(${random(255)},${random(255)},${random(255)})`;
+//const slide = document.querySelectorAll(".swiper-slide");
+//for (const i of slide) {
+//    const random = (number) => Math.floor(Math.random() * (number + 1));
+//    i.style.backgroundColor = `rgb(${random(255)},${random(255)},${random(255)})`;
+//}
+
+const itemList = document.querySelectorAll(' .fade-item');
+let currentIndex = 0;
+
+const showNextItem = () => {
+    itemList.forEach(item => item.classList.remove('active'));
+    itemList[currentIndex].classList.add('active');
+    currentIndex = (currentIndex + 1) % itemList.length;
 }
+
+showNextItem();
+setInterval(showNextItem, 2000);
+
+
+
 const swiperOptions = {
     loop: "infinite",
     effect: "fade",
     autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
+        delay: 50000,
+        disableOnInteraction: true
     },
     navigation: {
         nextEl: ".swiper-button-next",
@@ -37,4 +49,6 @@ const swiperOptions = {
 };
 
 const swiper = new Swiper(".swiper", swiperOptions);
+
+
 
