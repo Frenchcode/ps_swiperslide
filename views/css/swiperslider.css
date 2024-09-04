@@ -271,7 +271,9 @@
 }
 
 .mg-top-five {
-    margin-top: 5rem;
+    & > h1 {
+        font-size: 3rem !important;
+    }
 }
 
 .text-btn {
@@ -406,10 +408,6 @@
         flex-direction: row;
     }
 
-    .mg-top-five {
-        margin-top: 0rem;
-    }
-
     .text-btn {
         width: 60%;
     }
@@ -441,13 +439,13 @@
                 font-size: 7rem;
             }
             & > .affin-text {
-                font-size: 7rem;
+                font-size: 6rem;
             }
             & > .sculpter-text {
-                font-size: 7rem;
+                font-size: 6rem;
             }
             & > .silhoutte-text {
-                font-size: 7rem;
+                font-size: 6rem;
             }
         }
 
@@ -473,13 +471,13 @@
                 font-size: 9rem;
             }
             & > .affin-text {
-                font-size: 9rem;
+                font-size: 8rem;
             }
             & > .sculpter-text {
-                font-size: 9rem;
+                font-size: 8rem;
             }
             & > .silhoutte-text {
-                font-size: 9rem;
+                font-size: 8rem;
             }
         }
 
