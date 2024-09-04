@@ -5,7 +5,7 @@
         <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide" id="creme-container">
-                <div id="text-btn" class="">
+                <div class="text-btn">
                     <h1>
                         <span class="slim-text">Slim</span>
                         <span class="xtrem-text">Xtrem'</span>
@@ -37,25 +37,14 @@
             </div>
             <!-- Slides 2-->
             <div class="swiper-slide" id="gain-container">
-                <div id="text-btn" class="">
+                <div class="text-btn mg-top-five">
                     <h1>
-                        <span class="slim-text">Slim</span>
-                        <span class="xtrem-text">Xtrem'</span>
+                        <span class="affin-text">Affiner &</span>
+                        <br>
+                        <span class="sculpter-text">Sculpter</span>
+                        <br>
+                        <span class="silhoutte-text">Votre Silhoutte</span>
                     </h1>
-                    <ul id="title-effects">
-                        <li class="fade-item">
-                            <p>Dessinez votre silhouette</p>
-                        </li>
-                        <li class="fade-item">
-                            <p>Esquissez votre forme</p>
-                        </li>
-                        <li class="fade-item">
-                            <p>Créez votre silhouette</p>
-                        </li>
-                        <li class="fade-item">
-                            <p>Modelez votre image</p>
-                        </li>
-                    </ul>
                     <button type="button">Je découvre</button>
                 </div>
                 <div id="element-icon" class="btn-container">

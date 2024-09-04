@@ -270,12 +270,15 @@
     object-fit: cover;
 }
 
-#text-btn {
+.mg-top-five {
+    margin-top: 5rem;
+}
+
+.text-btn {
     text-align: center;
 
     & > h1 {
         font-size: 5rem;
-
         transition: 1.8s;
         &:hover {
             transition: 0.5s;
@@ -297,6 +300,19 @@
                         1px 30px 60px rgba(16,16,16,0.4);
         }
         & > .slim-text {
+            color: var(--default-black);
+            font-family: 'GreatVibes', cursive;
+        }
+        & > .affin-text {
+            color: var(--naslim-white);
+            font-family: 'Antonsc', serif;
+            text-transform: uppercase;
+        }
+        & > .sculpter-text {
+            color: var(--naslim-gold);
+            font-family: 'Antonsc', serif;
+        }
+        & > .silhoutte-text {
             color: var(--default-black);
             font-family: 'GreatVibes', cursive;
         }
@@ -390,7 +406,11 @@
         flex-direction: row;
     }
 
-    #text-btn {
+    .mg-top-five {
+        margin-top: 0rem;
+    }
+
+    .text-btn {
         width: 60%;
     }
 
@@ -412,12 +432,21 @@
         }
     }
 
-    #text-btn {
+    .text-btn {
         & > h1 {
             & > .slim-text {
                 font-size: 9rem;
             }
             & > .xtrem-text {
+                font-size: 7rem;
+            }
+            & > .affin-text {
+                font-size: 7rem;
+            }
+            & > .sculpter-text {
+                font-size: 7rem;
+            }
+            & > .silhoutte-text {
                 font-size: 7rem;
             }
         }
@@ -435,12 +464,21 @@
 }
 
 @container swiper-cont (min-width: 1280px) {
-    #text-btn {
+    .text-btn {
         & > h1 {
             & > .slim-text {
                 font-size: 11rem;
             }
             & > .xtrem-text {
+                font-size: 9rem;
+            }
+            & > .affin-text {
+                font-size: 9rem;
+            }
+            & > .sculpter-text {
+                font-size: 9rem;
+            }
+            & > .silhoutte-text {
                 font-size: 9rem;
             }
         }
