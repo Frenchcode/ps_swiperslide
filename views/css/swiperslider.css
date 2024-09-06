@@ -279,12 +279,37 @@
 
 .creme-img {
     width: 100%;
-    max-width: 37.5rem;
+    max-width: 24rem;
     height: auto;
     object-fit: cover;
 }
 
+/*Tisane img*/
+#tisane-img {
+    width: auto;
+    height: 100%;
+    max-height: 20rem;
+    object-fit: cover;
+}
+
+#tisane-ctn {
+    margin-top: 2rem;
+}
+
+/*Gain img*/
+#gaine-img {
+    width: auto;
+    height: 100%;
+    max-height: 15rem;
+    object-fit: cover;
+}
+
+#gaine-ctn {
+    margin-top: 2rem;
+}
+
 .mg-top-five {
+    margin-top: 3rem;
     & > h1 {
         font-size: 3rem !important;
     }
@@ -462,6 +487,14 @@
             animation: ripple 5s infinite;
         }
     }
+
+    .creme-img {
+        max-width: 28rem;
+    }
+
+    .mg-top-five {
+        margin-top: 0;
+    }
 }
 
 @container swiper-cont (min-width: 1024px) {
@@ -517,6 +550,23 @@
             font-size: 1.5rem;
             padding: 1.5rem 4.5rem;
         }
+    }
+
+    /*Tisane img*/
+    #tisane-img {
+        max-height: 32rem;
+    }
+
+    #tisane-ctn {
+        margin-top: 0;
+    }
+
+    #gaine-img {
+        max-height: 24rem;
+    }
+
+    #gaine-ctn {
+        margin-top: 0;
     }
 }
 
@@ -654,3 +704,38 @@
     animation: spin 5s linear infinite;
 }
 
+
+/*forth slider ball styling*/
+.circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(#001fd1 0%, #001bb3 10%, #00106c 50%, #000a40 100%);
+    border-radius: 50%;
+    z-index: -2;
+    animation: bounce 3s linear infinite;
+}
+
+.circle::before {
+    content: "";
+    position: relative;
+    width: 90px;
+    height: 60%;
+    background: linear-gradient(#677be9 10%, #00127b 50%, #000c4e 100%);
+    border-radius: 50%;
+    filter: blur(20px);
+}
+
+.circle::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.415);
+    border-radius: 50%;
+    bottom: -50%;
+    filter: blur(12px);
+}

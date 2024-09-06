@@ -27,7 +27,7 @@
                     <button type="button">Je découvre</button>
                 </div>
                 <div id="element-icon" class="btn-container element-image">
-                    <img src="modules/swiperslider/views/img/creme.png" alt="{$creme_alt}" class="creme-img">
+                    <img src="modules/swiperslider/views/img/creme.webp" alt="{$creme_alt}" class="creme-img">
                     <button></button>
                     <button></button>
                     <button></button>
@@ -47,8 +47,8 @@
                     </h1>
                     <button type="button">Je Craque</button>
                 </div>
-                <div id="" class="btn-container element-image">
-                    <img src="modules/swiperslider/views/img/gaines.webp" alt="{$creme_alt}" class="creme-img bounce-img ">
+                <div id="gaine-ctn" class="btn-container element-image">
+                    <img src="modules/swiperslider/views/img/gaines.webp" alt="{$creme_alt}" id="gaine-img" class="bounce-img ">
                     <button></button>
                     <button></button>
                     <button></button>
@@ -76,8 +76,8 @@
                     </h1>
                     <button type="button">Je Veux</button>
                 </div>
-                <div id="" class="btn-container element-image">
-                    <img src="modules/swiperslider/views/img/tisane.webp" alt="{$creme_alt}" class="creme-img bounce-img">
+                <div id="tisane-ctn" class="btn-container element-image">
+                    <img src="modules/swiperslider/views/img/tisane.webp" alt="{$creme_alt}" id="tisane-img" class="bounce-img">
                 </div>
             </div>
             <!-- Slides 4-->
@@ -93,7 +93,7 @@
                     <button type="button">J'achète</button>
                 </div>
                 <div id="" class="btn-container element-image">
-                    <img src="modules/swiperslider/views/img/boost_minceur.png" alt="{$creme_alt}" class="creme-img bounce-img">
+                    <img src="modules/swiperslider/views/img/boost_minceur.webp" alt="{$creme_alt}" class="creme-img bounce-img">
                     <div class="circle"></div>
                 </div>
             </div>
