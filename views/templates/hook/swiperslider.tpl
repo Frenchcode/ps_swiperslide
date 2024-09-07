@@ -92,9 +92,23 @@
                     </h1>
                     <button type="button">J'achète</button>
                 </div>
-                <div id="" class="btn-container element-image">
-                    <img src="modules/swiperslider/views/img/boost_minceur.webp" alt="{$creme_alt}" class="creme-img bounce-img">
-                    <div class="circle"></div>
+                <div id="boost-ctn" class=" element-image">
+                    <div class=top-left-ball>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="product-boost">
+                        <div class="triangle-ctn">
+                            <div class="side left"></div>
+                            <div class="side front"></div>
+                            <div class="side right"></div>
+                            <div class="side back"></div>
+                            <div class="shadow"></div>
+                        </div>
+                        <img src="modules/swiperslider/views/img/boost_minceur.webp" alt="{$creme_alt}" id="boost-img" class="bounce-img">
+                    </div>
+                    <div class="bottom-right-ball">
+                        <div class="circle"></div>
+                    </div>
                 </div>
             </div>
         </div>
