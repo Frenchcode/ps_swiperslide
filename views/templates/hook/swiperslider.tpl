@@ -111,6 +111,36 @@
                     </div>
                 </div>
             </div>
+            <!-- Slides 5-->
+            <div class="swiper-slide" id="duo-container">
+                <div class="text-btn mg-top-five">
+                    <h1>
+                        <span id="duo-text">Duo Parfait</span>
+                        <br>
+                        <span id="jamais-text">Jamais l'un sans l'autre</span>
+                    </h1>
+                    <button type="button">Je me lance</button>
+                </div>
+                <div id="duo-ctn" class=" element-image">
+                    <div class=duo-top-left-ball>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="duo-boost">
+                        <div class="triangle-ctn">
+                            <div class="side left"></div>
+                            <div class="side front"></div>
+                            <div class="side right"></div>
+                            <div class="side back"></div>
+                            <div class="shadow"></div>
+                        </div>
+                        <img src="modules/swiperslider/views/img/gelules_blanche_universalview.webp" alt="{$creme_alt}" id="duo-white-img" class="bounce-img">
+                        <img src="modules/swiperslider/views/img/gelules_noire_universalview.webp" alt="{$creme_alt}" id="duo-black-img" class="bounce-img">
+                    </div>
+                    <div class="duo-bottom-right-ball">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>

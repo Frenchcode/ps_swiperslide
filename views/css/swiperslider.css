@@ -752,7 +752,7 @@
     align-items: center;
     width: 70px;
     height: 70px;
-    background: linear-gradient(#001fd1 0%, #001bb3 10%, #00106c 50%, #000a40 100%);
+    background: linear-gradient(var(--naslim-light-brown) 0%, var(--naslim-brown) 10%, var(--naslim-gold) 50%, var(--naslim-brown) 100%);
     border-radius: 50%;
     z-index: -2;
     animation: bounce 3s linear infinite;
@@ -763,7 +763,7 @@
     position: relative;
     width: 40px;
     height: 60%;
-    background: linear-gradient(#677be9 10%, #00127b 50%, #000c4e 100%);
+    background: linear-gradient(var(--naslim-light-brown) 10%, var(--naslim-brown) 50%, var(--naslim-gold) 100%);
     border-radius: 50%;
     filter: blur(20px);
 }
