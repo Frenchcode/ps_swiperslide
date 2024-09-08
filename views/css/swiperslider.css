@@ -115,6 +115,7 @@
     --creme-bg-color: hsl(0deg 0% 90.98%);
     --default-black: hsl(0deg 0% 0.39%);
     --naslim-gold: hsl(41.2deg 65.35% 75.1% / 100%);
+    --naslim-gold-dark: hsl(41 65% 61% / 1);
     --naslim-purple: hsl(298, 13%, 45%);
     --naslim-brown: hsl(340deg 8.67% 33.92%);
     --naslim-light-brown: hsl(340deg 8.67% 33.92% / 79%);
@@ -280,7 +281,15 @@
 }
 
 #duo-container {
-    background-image: conic-gradient(var(--creme-bg-color), var(--creme-bg-color), black, black);
+    background-image: conic-gradient(var(--creme-bg-color), var(--creme-bg-color), var(--default-black), var(--default-black));
+}
+
+.gold-text {
+    color: var(--naslim-gold);
+}
+
+.white-text {
+    color: var(--naslim-white);
 }
 
 .creme-img {
@@ -437,6 +446,24 @@
             font-size: 1.8rem;
             text-transform: uppercase;
         }
+        & > #duo-text {
+            font-family: 'Roboto', serif;
+            font-weight: 300;
+            font-size: 3rem;
+            text-transform: uppercase;
+            background-color: var(--default-black);
+            border-radius: 0.2rem;
+            padding: 0 0.5rem;
+        }
+        & > #never-text {
+            font-family: 'BebasNeue', serif;
+            font-weight: 100;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            background-color: var(--default-black);
+            border-radius: 0.2rem;
+            padding: 0 0.5rem;
+        }
     }
 
     & > ul#title-effects > li > p {
@@ -463,6 +490,10 @@
         padding: 1rem 4rem;
         margin-top: 1rem;
         transition: ease-out 1.8s;
+
+        &.gold-btn {
+            background-color: var(--naslim-gold-dark);
+        }
 
         &:hover {
             background-color: var(--naslim-gold);
@@ -587,6 +618,12 @@
             }
             & > #balance-text {
                 font-size: 2.5rem;
+            }
+            & > #duo-text {
+                font-size: 5.5rem;
+            }
+            & > #never-text {
+                font-size: 3rem;
             }
         }
 

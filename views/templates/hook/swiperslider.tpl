@@ -115,11 +115,11 @@
             <div class="swiper-slide" id="duo-container">
                 <div class="text-btn mg-top-five">
                     <h1>
-                        <span id="duo-text">Duo Parfait</span>
+                        <span id="duo-text" class="white-text">Duo <span class="gold-text">Parfait</span></span>
                         <br>
-                        <span id="jamais-text">Jamais l'un sans l'autre</span>
+                        <span id="never-text">Jamais l'un sans l'autre</span>
                     </h1>
-                    <button type="button">Je me lance</button>
+                    <button type="button" class="gold-btn">Je me lance</button>
                 </div>
                 <div id="duo-ctn" class=" element-image">
                     <div class=duo-top-left-ball>
