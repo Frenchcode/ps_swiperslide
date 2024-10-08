@@ -1,20 +1,19 @@
 {
-  "name": "prestashop/swiperslider",
-  "description": "Add Swiper and GSAP to your website",
+  "name": "prestashop/myhealthbanner",
+  "description": "Add a slidding banner",
   "license": "AFL-3.0",
   "authors": [
     {
-      "name": "Ephraim Bokuma",
-      "email": "ephraimbokuma@hotmail.com"
+      "name": "Ephraim Bokuma"
     }
   ],
   "autoload": {
     "psr-4": {
-      "PrestaShop\\Module\\SwiperSlider\\: "src/"
+      "PrestaShop\\Module\\SwiperSlider\\": "src/"
     }
   },
   "require": {
-    "php": ">=8.0"
+    "php": ">=8.1.0"
   },
   "config": {
     "preferred-install": "dist",
