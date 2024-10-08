@@ -765,7 +765,7 @@
     }
 }
 
-@keyframes bounce {
+@keyframes naslim-bounce {
     0%, 100% {
         transform: translateY(0);
     }
@@ -789,7 +789,7 @@
 
 /*Bouncing images*/
 .bounce-img {
-    animation: bounce 2s infinite ease-in-out;
+    animation: naslim-bounce 2s infinite ease-in-out;
     transition: box-shadow 0.4s ease-in-out;
 }
 
@@ -844,7 +844,7 @@
     background: linear-gradient(var(--naslim-light-brown) 0%, var(--naslim-brown) 10%, var(--naslim-gold) 50%, var(--naslim-brown) 100%);
     border-radius: 50%;
     z-index: -2;
-    animation: bounce 3s linear infinite;
+    animation: naslim-bounce 3s linear infinite;
 }
 
 .circle::before {
