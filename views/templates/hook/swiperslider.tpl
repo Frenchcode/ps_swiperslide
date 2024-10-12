@@ -58,14 +58,6 @@
             </div>
             <!-- Slides 3-->
             <div class="swiper-slide" id="tissane-container">
-                <svg class="naslim-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1337.97 684.43">
-                    <path class="naslim-shape big-square" fill="#d1105a" d="M546.519 349.271l86.383-56.098 56.097 86.383-86.383 56.098z"/>
-                    <path class="naslim-shape triangle" fill="none" stroke="#2f0b2b" stroke-width="8" d="M372.15 462.17L321 434.58l-4.88 56.16z"/>
-                    <circle class="naslim-shape bigCircle" fill="#fdc500" cx="1076.52" cy="262.17" r="59"/>
-                    <path class="naslim-shape littleSquare" fill="#f72585" d="M285.523 262.61l12.372-53.59 53.59 12.372-12.372 53.59z"/>
-                    <circle class="naslim-shape hoop" fill="none" stroke="#fdc500" stroke-width="13" cx="905.52" cy="447.17" r="45"/>
-                    <circle class="naslim-shape littleCircle" fill="#f72585" cx="1036.52" cy="203.17" r="27"/>
-                </svg>
                 <div class="text-btn mg-top-five">
                     <h1>
                         <span id="allie-text">Votre allié</span>
@@ -77,7 +69,12 @@
                     <button type="button">Je Veux</button>
                 </div>
                 <div id="tisane-ctn" class="btn-container element-image">
-                    <img src="modules/swiperslider/views/img/tisane.webp" alt="{$creme_alt}" id="tisane-img" class="bounce-img">
+                    <img src="modules/swiperslider/views/img/tisane.webp" alt="{$creme_alt}" id="tisane-img" class="bounce-img ">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
                 </div>
             </div>
             <!-- Slides 4-->

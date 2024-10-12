@@ -269,6 +269,10 @@
 }
 
 #tissane-container {
+    background-color: var(--creme-bg-color);
+}
+
+#tissane-container-old {
     background: radial-gradient(var(--naslim-gold) 8%, transparent 10%), var(--naslim-purple);
     background-position: 0 0, 25px 25px;
     background-size:15px 15px;
@@ -446,11 +450,11 @@
             font-family: 'Antonsc', serif;
         }
         & > #allie-text {
-            color: var(--naslim-white);
+            color: var(--naslim-gold);
             font-family: 'Antonsc', serif;
         }
         & > #minc-text {
-            color: var(--naslim-white);
+            color: var(--default-black);
             font-family: 'GreatVibes', cursive;
         }
         & > #daily-text {

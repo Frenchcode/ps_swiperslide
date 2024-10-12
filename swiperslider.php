@@ -28,7 +28,7 @@ class SwiperSlider extends Module
     {
         $this->name = 'swiperslider';
         $this->tab = 'front_office_features';
-        $this->version = '1.3.4';
+        $this->version = '1.3.5';
         $this->author = 'Ephraim Bokuma';
         $this->author_uri = 'https://www.ephraimbokuma.com';
         $this->need_instance = 0;
