@@ -611,58 +611,53 @@
         animation: ripple-done 5s infinite;
     }
 
-    .text-btn {
-        & > h1 {
-            & > #slim-text {
-                font-size: 9rem;
-            }
-            & > #xtrem-text {
-                font-size: 7rem;
-            }
-            & > #affin-text {
-                font-size: 6rem;
-            }
-            & > #sculpter-text {
-                font-size: 6rem;
-            }
-            & > #silhoutte-text {
-                font-size: 6rem;
-            }
-            & > #allie-text {
-                font-size: 3rem;
-            }
-            & > #minc-text {
-                font-size: 9rem;
-            }
-            & > #daily-text {
-                font-size: 6rem;
-            }
-            & > #boost-text {
-                font-size: 6rem;
-            }
-            & > #ventre-text {
-                font-size: 9rem;
-            }
-            & > #balance-text {
-                font-size: 2.5rem;
-            }
-            & > #duo-text {
-                font-size: 5.5rem;
-            }
-            & > #never-text {
-                font-size: 3rem;
-            }
-        }
+    .text-btn > h1 > #slim-text {
+        font-size: 9rem;
+    }
+    .text-btn > h1 > #xtrem-text {
+        font-size: 7rem;
+    }
+    .text-btn > h1 > #affin-text {
+        font-size: 6rem;
+    }
+    .text-btn > h1 > #sculpter-text {
+        font-size: 6rem;
+    }
+    .text-btn > h1 > #silhoutte-text {
+        font-size: 6rem;
+    }
+    .text-btn > h1 > #allie-text {
+        font-size: 3rem;
+    }
+    .text-btn > h1 > #minc-text {
+        font-size: 9rem;
+    }
+    .text-btn > h1 > #daily-text {
+        font-size: 6rem;
+    }
+    .text-btn > h1 > #boost-text {
+        font-size: 6rem;
+    }
+    .text-btn > h1 > #ventre-text {
+        font-size: 9rem;
+    }
+    .text-btn > h1 > #balance-text {
+        font-size: 2.5rem;
+    }
+    .text-btn > h1 > #duo-text {
+        font-size: 5.5rem;
+    }
+    .text-btn > h1 > #never-text {
+        font-size: 3rem;
+    }
+    .text-btn > ul#title-effects > li > p {
+        font-size: 1.9rem;
+        line-height: 3rem;
+    }
 
-        & > ul#title-effects > li > p {
-            font-size: 1.9rem;
-            line-height: 3rem;
-        }
-
-        & > button {
-            font-size: 1.5rem;
-            padding: 1.5rem 4.5rem;
-        }
+    .text-btn > button {
+        font-size: 1.5rem;
+        padding: 1.5rem 4.5rem;
     }
 
     /*Tisane img*/
@@ -700,43 +695,38 @@
 }
 
 @container swiper-cont (min-width: 1280px) {
-    .text-btn {
-        & > h1 {
-            & > #slim-text {
-                font-size: 11rem;
-            }
-            & > #xtrem-text {
-                font-size: 9rem;
-            }
-            & > #affin-text {
-                font-size: 8rem;
-            }
-            & > #sculpter-text {
-                font-size: 8rem;
-            }
-            & > #silhoutte-text {
-                font-size: 8rem;
-            }
-            & > #allie-text {
-                font-size: 3rem;
-            }
-            & > #minc-text {
-                font-size: 12rem;
-            }
-            & > #daily-text {
-                font-size: 8rem;
-            }
-        }
 
-        & > ul#title-effects > li > p {
-            font-size: 2.8rem;
-            line-height: 3rem;
-        }
-
-        & > button {
-            font-size: 2rem;
-            padding: 2rem 5rem;
-        }
+    .text-btn > h1 > #slim-text {
+        font-size: 11rem;
+    }
+    .text-btn > h1 > #xtrem-text {
+        font-size: 9rem;
+    }
+    .text-btn > h1 > #affin-text {
+        font-size: 8rem;
+    }
+    .text-btn > h1 > #sculpter-text {
+        font-size: 8rem;
+    }
+    .text-btn > h1 > #silhoutte-text {
+        font-size: 8rem;
+    }
+    .text-btn > h1 > #allie-text {
+        font-size: 3rem;
+    }
+    .text-btn > h1 > #minc-text {
+        font-size: 12rem;
+    }
+    .text-btn > h1 > #daily-text {
+        font-size: 8rem;
+    }
+    .text-btn > ul#title-effects > li > p {
+        font-size: 2.8rem;
+        line-height: 3rem;
+    }
+    .text-btn > button {
+        font-size: 2rem;
+        padding: 2rem 5rem;
     }
 }
 
@@ -935,7 +925,6 @@
         border-bottom-color: var(--naslim-brown);
     }
 }
-
 
 .shadow {
     position: absolute;
