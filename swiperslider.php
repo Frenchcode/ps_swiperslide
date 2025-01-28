@@ -38,7 +38,7 @@ class SwiperSlider extends Module
         parent::__construct();
 
         $this->displayName = $this->trans('Swiper Slider', [], 'Modules.Swiperslider.Admin');
-        $this->description = $this->trans('Adds GSAP and Swiper slider to your website', [], 'Modules.Swiperslider.Admin');
+        $this->description = $this->trans('Adds GSAP and Swiper Slider to your website', [], 'Modules.Swiperslider.Admin');
         $this->confirmUninstall = $this->trans('Are you sure you want to uninstall?', [], 'Modules.Swiperslider.Admin');
 
         if(!Configuration::get('SWIPERSLIDER')) {
@@ -99,8 +99,6 @@ class SwiperSlider extends Module
             return $this->display(__FILE__, 'swiperslider.tpl');
         return false;
     }
-
-
 
     public function hookActionFrontControllerSetMedia():void
     {

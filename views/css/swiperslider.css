@@ -221,43 +221,43 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+}
 
-    & > img {
-        z-index: 1;
-    }
+.btn-container > img {
+    z-index: 1;
+}
 
-    & > button {
-        position: absolute;
-        z-index: 0;
-        animation: ripple 5s infinite;
-        border-radius: 100%;
-        border: none;
-        background-color: var(--wave-button);
-        box-shadow: inset 10px 10px 20px var(--wave-button-shadow),
-        inset -10px -10px 20px var(--naslim-white);
-        transition: 0.33s ease-in all;
-        opacity: 0;
+.btn-container > button {
+    position: absolute;
+    z-index: 0;
+    animation: ripple 5s infinite;
+    border-radius: 100%;
+    border: none;
+    background-color: var(--wave-button);
+    box-shadow: inset 10px 10px 20px var(--wave-button-shadow),
+    inset -10px -10px 20px var(--naslim-white);
+    transition: 0.33s ease-in all;
+    opacity: 0;
+}
 
-        &:nth-child(1) {
-            animation-delay: 500ms;
-        }
+.btn-container > button:nth-child(1) {
+    animation-delay: 500ms;
+}
 
-        &:nth-child(2) {
-            animation-delay: 1000ms;
-        }
+.btn-container > button:nth-child(2) {
+    animation-delay: 1000ms;
+}
 
-        &:nth-child(3) {
-            animation-delay: 1500ms;
-        }
+.btn-container > button:nth-child(3) {
+    animation-delay: 1500ms;
+}
 
-        &:nth-child(4) {
-            animation-delay: 2000ms;
-        }
+.btn-container > button:nth-child(4) {
+    animation-delay: 2000ms;
+}
 
-        &:nth-child(5) {
-            animation-delay: 2500ms;
-        }
-    }
+.btn-container > button:nth-child(5) {
+    animation-delay: 2500ms;
 }
 
 #creme-container {
@@ -398,146 +398,147 @@
 
 .mg-top-five {
     margin-top: 3rem;
-    & > h1 {
-        font-size: 3rem !important;
-    }
+}
+
+.mg-top-five > h1 {
+    font-size: 3rem !important;
 }
 
 .text-btn {
     text-align: center;
+}
 
-    & > h1 {
-        font-size: 5rem;
-        transition: 1.8s;
-        &:hover {
-            transition: 0.5s;
-            margin-top: -10px;
-            margin-bottom: 10px;
-            text-shadow: 1px 1px 1px var(--wave-button-shadow),
-                        1px 2px 1px var(--wave-button-shadow),
-                        1px 3px 1px var(--default-black),
-                        1px 4px 1px var(--default-black),
-                        1px 5px 1px var(--default-black),
-                        1px 6px 1px var(--default-black),
-                        1px 7px 1px var(--default-black),
-                        1px 8px 1px var(--default-black),
-                        1px 9px 1px var(--wave-button-shadow),
-                        1px 10px 1px var(--wave-button-shadow),
-                        1px 18px 6px rgba(16,16,16,0.4),
-                        1px 22px 10px rgba(16,16,16,0.2),
-                        1px 25px 35px rgba(16,16,16,0.2),
-                        1px 30px 60px rgba(16,16,16,0.4);
-        }
-        & > #slim-text {
-            color: var(--default-black);
-            font-family: 'GreatVibes', cursive;
-        }
-        & > #affin-text {
-            color: var(--naslim-white);
-            font-family: 'Antonsc', serif;
-            text-transform: uppercase;
-        }
-        & > #sculpter-text {
-            color: var(--naslim-gold);
-            font-family: 'Antonsc', serif;
-        }
-        & > #silhoutte-text {
-            color: var(--default-black);
-            font-family: 'GreatVibes', cursive;
-        }
-        & > #xtrem-text {
-            color: var(--naslim-gold);
-            font-family: 'Antonsc', serif;
-        }
-        & > #allie-text {
-            color: var(--naslim-gold);
-            font-family: 'Antonsc', serif;
-        }
-        & > #minc-text {
-            color: var(--default-black);
-            font-family: 'GreatVibes', cursive;
-        }
-        & > #daily-text {
-            color: var(--naslim-gold);
-            font-family: 'BebasNeue', serif;
-        }
-        & > #boost-text {
-            color: var(--naslim-brown);
-            font-family: 'GreatVibes', cursive;
-        }
-        & > #ventre-text {
-            color: var(--naslim-white);
-            font-family: 'Antonsc', serif;
-        }
-        & > #balance-text {
-            color: var(--naslim-brown);
-            font-family: 'Roboto', serif;
-            font-weight: 300;
-            font-size: 1.8rem;
-            text-transform: uppercase;
-        }
-        & > #duo-text {
-            font-family: 'Roboto', serif;
-            font-weight: 300;
-            font-size: 3rem;
-            text-transform: uppercase;
-            background-color: var(--default-black);
-            border-radius: 0.2rem;
-            padding: 0 0.5rem;
-        }
-        & > #never-text {
-            font-family: 'BebasNeue', serif;
-            font-weight: 100;
-            font-size: 1.8rem;
-            text-transform: uppercase;
-            background-color: var(--default-black);
-            border-radius: 0.2rem;
-            padding: 0 0.5rem;
-        }
-    }
+.text-btn > h1 {
+    font-size: 5rem;
+    transition: 1.8s;
+}
 
-    & > ul#title-effects > li > p {
-        font-size: 1rem;
-        line-height: 2rem;
-        text-align: center;
-        font-family: 'Roboto', serif;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: var(--default-black)
-    }
+.text-btn > h1:hover {
+    transition: 0.5s;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 1px var(--wave-button-shadow),
+    1px 2px 1px var(--wave-button-shadow),
+    1px 3px 1px var(--default-black),
+    1px 4px 1px var(--default-black),
+    1px 5px 1px var(--default-black),
+    1px 6px 1px var(--default-black),
+    1px 7px 1px var(--default-black),
+    1px 8px 1px var(--default-black),
+    1px 9px 1px var(--wave-button-shadow),
+    1px 10px 1px var(--wave-button-shadow),
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+.text-btn > h1 > #slim-text {
+    color: var(--default-black);
+    font-family: 'GreatVibes', cursive;
+}
+.text-btn > h1 > #affin-text {
+    color: var(--naslim-white);
+    font-family: 'Antonsc', serif;
+    text-transform: uppercase;
+}
+.text-btn > h1 > #sculpter-text {
+    color: var(--naslim-gold);
+    font-family: 'Antonsc', serif;
+}
+.text-btn > h1 > #silhoutte-text {
+    color: var(--default-black);
+    font-family: 'GreatVibes', cursive;
+}
+.text-btn > h1 > #xtrem-text {
+    color: var(--naslim-gold);
+    font-family: 'Antonsc', serif;
+}
+.text-btn > h1 > #allie-text {
+    color: var(--naslim-gold);
+    font-family: 'Antonsc', serif;
+}
+.text-btn > h1 > #minc-text {
+    color: var(--default-black);
+    font-family: 'GreatVibes', cursive;
+}
+.text-btn > h1 > #daily-text {
+    color: var(--naslim-gold);
+    font-family: 'BebasNeue', serif;
+}
+.text-btn > h1 > #boost-text {
+    color: var(--naslim-brown);
+    font-family: 'GreatVibes', cursive;
+}
+.text-btn > h1 > #ventre-text {
+    color: var(--naslim-white);
+    font-family: 'Antonsc', serif;
+}
+.text-btn > h1 > #balance-text {
+    color: var(--naslim-brown);
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.text-btn > h1 > #duo-text {
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    font-size: 3rem;
+    text-transform: uppercase;
+    background-color: var(--default-black);
+    border-radius: 0.2rem;
+    padding: 0 0.5rem;
+}
+.text-btn > h1 > #never-text {
+    font-family: 'BebasNeue', serif;
+    font-weight: 100;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: var(--default-black);
+    border-radius: 0.2rem;
+    padding: 0 0.5rem;
+}
 
-    & > button {
-        background-color: var(--default-black);
-        color: var(--naslim-white);
-        text-transform: uppercase;
-        font-size: 1rem;
-        font-family: Roboto, sans-serif;
-        text-decoration: none;
-        text-align: center;
-        cursor: pointer;
-        border: none;
-        border-radius: 1rem;
-        padding: 1rem 4rem;
-        margin-top: 1rem;
-        transition: ease-out 1.8s;
+.text-btn > ul#title-effects > li > p {
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    font-family: 'Roboto', serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--default-black)
+}
 
-        &.gold-btn {
-            background-color: var(--naslim-gold-dark);
-        }
+.text-btn > button {
+    background-color: var(--default-black);
+    color: var(--naslim-white);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 4rem;
+    margin-top: 1rem;
+    transition: ease-out 1.8s;
+}
 
-        &:hover {
-            background-color: var(--naslim-gold);
-            transition: ease-in-out .5s;
-            box-shadow: 1rem 1rem 2rem grey;
-        }
-        &:active {
-            border: none;
-            outline: none;
-            transform: scale(0.98);
-            box-shadow: 1rem 1rem 2rem grey;
-        }
+.text-btn > button.gold-btn {
+    background-color: var(--naslim-gold-dark);
+}
 
-    }
+.text-btn > button:hover {
+    background-color: var(--naslim-gold);
+    transition: ease-in-out .5s;
+    box-shadow: 1rem 1rem 2rem grey;
+}
+.text-btn > button:active {
+    border: none;
+    outline: none;
+    transform: scale(0.98);
+    box-shadow: 1rem 1rem 2rem grey;
 }
 
 .fade-item {
@@ -592,10 +593,8 @@
         width: 40%;
     }
 
-    .btn-container {
-        & > button {
-            animation: ripple 5s infinite;
-        }
+    .btn-container > button {
+        animation: ripple 5s infinite;
     }
 
     .creme-img {
@@ -608,10 +607,8 @@
 }
 
 @container swiper-cont (min-width: 1024px) {
-    .btn-container {
-        & > button {
-            animation: ripple-done 5s infinite;
-        }
+    .btn-container > button {
+        animation: ripple-done 5s infinite;
     }
 
     .text-btn {
